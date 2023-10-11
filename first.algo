@@ -1,0 +1,23 @@
+ALGORITHM algorithm_name
+VAR
+mb_char : INTEGER :=0 
+mb_words : INTEGER :=0
+mb_voy : INTEGER :=0
+c:CHAR
+BEGIN
+WHILE (c<>".") DO
+    read(c)
+    mb_char:=mb_char+1
+    if(c=" ")then
+    mb_words:=mb_words+1
+    end if
+    if(c="0"or c="y" or c="i" or c="e" or c="u")
+    then
+    mb_voy:=mb_voy+1
+    end if
+END_WHILE
+write (mb_char)
+write (mb_words)
+write (mb_voy)
+end.
+    
